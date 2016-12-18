@@ -42,7 +42,7 @@ LOCAL_SRC_FILES := \
     OMXVideoDecoderBase.cpp \
     OMXVideoDecoderAVC.cpp
 
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoDecoderAVC
 ifeq ($(TARGET_BOARD_PLATFORM),clovertrail)
@@ -108,7 +108,7 @@ LOCAL_SRC_FILES := \
     OMXVideoDecoderBase.cpp \
     OMXVideoDecoderVP8.cpp
 
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoDecoderVP8
 
@@ -184,7 +184,7 @@ LOCAL_SRC_FILES := \
     OMXVideoDecoderBase.cpp \
     OMXVideoDecoderVP9HWR.cpp
 
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoDecoderVP9HWR
 
@@ -237,7 +237,7 @@ LOCAL_SRC_FILES := \
     OMXVideoDecoderBase.cpp \
     OMXVideoDecoderVP9Hybrid.cpp
 
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoDecoderVP9Hybrid
 
@@ -297,7 +297,7 @@ LOCAL_SRC_FILES := \
     OMXVideoDecoderBase.cpp \
     OMXVideoDecoderMPEG4.cpp
 
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoDecoderMPEG4
 ifeq ($(TARGET_BOARD_PLATFORM),clovertrail)
@@ -358,7 +358,7 @@ LOCAL_SRC_FILES := \
     OMXVideoDecoderBase.cpp \
     OMXVideoDecoderH263.cpp
 
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoDecoderH263
 ifeq ($(TARGET_BOARD_PLATFORM),clovertrail)
@@ -419,7 +419,7 @@ LOCAL_SRC_FILES := \
     OMXVideoDecoderBase.cpp \
     OMXVideoDecoderWMV.cpp
 
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoDecoderWMV
 ifeq ($(TARGET_BOARD_PLATFORM),clovertrail)
@@ -489,7 +489,7 @@ LOCAL_CFLAGS += -DUSE_META_DATA
 LOCAL_SHARED_LIBRARIES += libdl
 endif
 
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoDecoderAVCSecure
 
@@ -585,7 +585,7 @@ LOCAL_SRC_FILES := \
     OMXVideoEncoderAVC.cpp
 
 LOCAL_CFLAGS += $(LOCAL_C_FLAGS)
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoEncoderAVC
 include $(BUILD_SHARED_LIBRARY)
@@ -627,7 +627,7 @@ LOCAL_CFLAGS += $(LOCAL_C_FLAGS)
 ifeq ($(SW_MPEG4_ENCODER),true)
     LOCAL_CFLAGS += -DSYNC_MODE
 endif
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoEncoderH263
 include $(BUILD_SHARED_LIBRARY)
@@ -666,7 +666,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_CFLAGS += $(LOCAL_C_FLAGS)
 
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoEncoderMPEG4
 include $(BUILD_SHARED_LIBRARY)
@@ -699,7 +699,7 @@ LOCAL_SRC_FILES := \
     OMXVideoDecoderBase.cpp \
     OMXVideoDecoderPAVC.cpp
 
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoDecoderPAVC
 ifeq ($(TARGET_BOARD_PLATFORM),clovertrail)
@@ -752,7 +752,7 @@ LOCAL_SRC_FILES := \
     OMXVideoEncoderVP8.cpp
 
 LOCAL_CFLAGS += $(LOCAL_C_FLAGS)
-LOCAL_CFLAGS += -w
+LOCAL_CFLAGS += -Werror
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libOMXVideoEncoderVP8
 include $(BUILD_SHARED_LIBRARY)
